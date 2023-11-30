@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Articles</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,700&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
-        body {
-            background-color: #231B3B;
-        }
-        header {
-            font-family: "montserrat";
+       header {
+            font-family: "cabin";
+            font-style: bold;
             font-size: 60px;
             font-style: italic;
             margin: -5%;
-            margin-left: 37%;
+            margin-left: 35%;
+            padding: 0;
+            background-color: #231B3B;
+            color: #fff;
+            letter-spacing: 10px;
+            position: relative;
+        }
+
+        hr{
+            border: 3px solid white;
+            width: 30%;
+            margin-top: -2%;
+            margin-left: 32%;
+            position: absolute;
+        }
+
+        nav {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 34%;
+            margin-top: -3%;
+            position: absolute;
+            letter-spacing: 4px;
+
+        }
+
+        body {
+            margin: 0;
             padding: 0;
             background-color: #231B3B;
             color: #fff;
         }
-
-        
 
     #articles{
             font-family: "cabin";
@@ -29,7 +58,17 @@
             color: #fff;
             margin-left: 25%;
             line-height: -2%;
+            margin-top: 9%;
+            position: relative;
     }
+
+    .break hr{
+            border: 3px solid magenta;
+            width: 67%;
+            margin-top: 11%;
+            margin-left: 14%;
+            position: absolute;
+        }
 
     .article1 {
             font-family: "montserrat";
@@ -45,22 +84,22 @@
             display: block;
             font-size: 24px;
             margin-left: 14%;
-            margin-top: 4%;
+            margin-top: 7%;
             position: relative;
     }
 
     .article1 img{
-        height: 283px;
-        width: 404.5px;
-        margin-left: -0.5%;
-        margin-top: -0.7%;
+            height: 283px;
+            width: 404.5px;
+            margin-left: -0.5%;
+            margin-top: -0.7%;
     }
 
     .article1 p {
-        font-family: "montserrat";
-        color: #fff222;
-        margin-top: 70%;
-        position: absolute;
+            font-family: "montserrat";
+            color: #fff222;
+            margin-top: 70%;
+            position: absolute;
     }
 
     .article1 button {
@@ -100,17 +139,17 @@
     }
 
     .article2 img{
-        height: 283px;
-        width: 404.5px;
-        margin-left: -0.5%;
-        margin-top: -0.7%;
+            height: 283px;
+            width: 404.5px;
+            margin-left: -0.5%;
+            margin-top: -0.7%;
     }
 
     .article2 p {
-        font-family: "montserrat";
-        color: #FF7FE8;
-        margin-top: 70%;
-        position: absolute;
+             font-family: "montserrat";
+             color: #FF7FE8;
+             margin-top: 70%;
+             position: absolute;
     }
 
     .article2 button {
@@ -132,9 +171,21 @@
     }
     </style>
 </head>
+
 <header>
     <h1>LUCID</h1>
 </header>
+
+<nav>
+    <h2>It's Time to Wake Up</h2>
+</nav>
+
+<hr>
+
+<div class="break">
+<hr>
+</div>
+
 
 <body>
     <section id="articles">
@@ -152,4 +203,6 @@
         <button type="button">Check It Out</button>
         <img src="heart.png" alt="heart">
     </div>
+
 </body>
+</html>
