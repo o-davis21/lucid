@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcoholics Anonymous</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        header {
+            font-family: "cabin";
+            font-style: bold;
+            font-size: 60px;
+            font-style: italic;
+            margin: -5%;
+            margin-left: 35%;
+            padding: 0;
+            background-color: #231B3B;
+            color: #fff;
+            letter-spacing: 10px;
+            position: relative;
+        }
+
+        header h2{
+            font-family: "cabin";
+            font-style: bold;
+            font-size: 140px;
+            font-style: italic;
+            margin: -5%;
+            margin-left: -3%;
+            margin-top: -25%;
+            padding: 0;
+            background-color: #231B3B;
+            color: #fff;
+            letter-spacing: 10px;
+            position: absolute;
+            text-decoration: none;
+        }
+
+        hr{
+            border: 3px solid white;
+            width: 30%;
+            margin-top: -2%;
+            margin-left: 32%;
+            position: absolute;
+        }
+
+        header h3{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 35px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: -1%;
+            margin-top: -9%;
+            position: absolute;
+            letter-spacing: 4px;
+
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #231B3B;
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .top img{
+            height: 220px;
+            width: 65%;
+            margin-left: 15%;
+            margin-top: 6%;
+            position: relative;
+        }
+
+        .top h1{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 17%;
+            margin-top: 1%;
+            position: absolute;
+            letter-spacing: 4px;
+        }
+
+        .top hr{
+            border: 1px solid white;
+            width: 60%;
+            margin-top: 4%;
+            margin-left: 17%;
+            position: absolute;
+        }
+
+        nav {
+            font-family: "cabin";
+            display: flex;
+            justify-content: space-around;
+            background-color: #231B3B;
+            width: 700px;
+            font-size: 20px;
+            margin-top: 4%;
+            margin-left: 14.3%;
+        }
+
+        nav a {
+            font-family: "cabin";
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .bottom hr{
+            border: 1px solid white;
+            width: 60%;
+            margin-top: 7%;
+            margin-left: 17%;
+            position: absolute;
+        }
+
+        section {
+            display: none;
+            padding-left: 20px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        #section1 .Create{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 600px;
+            height: 150px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 7%;
+            margin-top: 2%;
+            position: relative;
+        }
+
+        #section1 .Create1{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 400px;
+            height: 50px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 9%;
+            margin-top: -10%;
+            position: relative;
+        }
+
+        #section1 .Create1 button{
+            font-family: "montserrat";
+            color: #231B3B;
+            background-color: #FF7FE8;
+            border-color: #FF7FE8;
+            border-style: solid;
+            border-width: 4px;
+            padding: 3px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 19px;
+            margin-left: 60%;
+            margin-top: -1.3%;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #section1 .Create1 h1{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: #FF7FE8;
+            margin-left: 7%;
+            margin-top: 3%;
+            position: absolute;
+            letter-spacing: 1px;
+        }
+
+        #section1 .Create hr{
+            border: 1px solid grey;
+            width: 609px;
+            margin-top: 17%;
+            margin-left: -1%;
+            position: absolute;
+        }
+
+        #section1 .vl1{
+            border-left: 1px solid grey;
+            height: 50px;
+            margin-left: 20%;
+            margin-top: 2%;
+        }
+
+        #section1 .vl2{
+            border-left: 1px solid grey;
+            height: 50px;
+            margin-left: 35%;
+            margin-top: -3.6%;
+        }
+
+        #section1 .Create1 h2{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            margin-left: 7%;
+            margin-top: 23%;
+            position: absolute;
+            letter-spacing: 1px;
+        }
+
+        #section1 .Create1 h3{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            margin-left: 55%;
+            margin-top: 23%;
+            position: absolute;
+            letter-spacing: 1px;
+        }
+
+        #section1 .Create1 h4{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            margin-left: 110%;
+            margin-top: 23%;
+            position: absolute;
+            letter-spacing: 1px;
+        }
+
+        #section1 .About{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 300px;
+            height: 200px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 53%;
+            margin-top: -11.5%;
+            position: relative;
+        }
+        
+        #section1 .About h1 {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 2%;
+            letter-spacing: 1px;
+            position: absolute;
+        }
+
+        #section1 .About p {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 20%;
+            margin-right: 5%;
+            letter-spacing: 1px;
+            text-align: left;
+            position: absolute;
+        }
+
+        #section1 .Members{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 300px;
+            height: 200px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 53%;
+            margin-top: 2%;
+            position: relative;
+        }
+
+        #section1 .Members h1 {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 2%;
+            letter-spacing: 1px;
+            position: absolute;
+        }
+
+        #section1 .Members h2 {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 18%;
+            letter-spacing: 1px;
+            position: absolute;
+        }
+
+        #section1 .Members h3 {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 33%;
+            letter-spacing: 1px;
+            position: absolute;
+        }
+
+        #section1 .Members h4 {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 49%;
+            letter-spacing: 1px;
+            position: absolute;
+        }
+
+        #section1 .Members button{
+            font-family: "montserrat";
+            color: #FF7FE8;
+            background-color: transparent;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 4px;
+            padding: 3px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 19px;
+            margin-left: 10%;
+            margin-top: 15%;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #section1 .button2 button{
+            font-family: "montserrat";
+            color: #FF7FE8;
+            background-color: transparent;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 4px;
+            padding: 3px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 19px;
+            margin-left: 64.5%;
+            margin-top: -7.8%;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #section1 .button3 button{
+            font-family: "montserrat";
+            color: #FF7FE8;
+            background-color: transparent;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 4px;
+            padding: 3px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 19px;
+            margin-left: 64.5%;
+            margin-top: -4.4%;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #section1 .Post{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 600px;
+            height: 300px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 7%;
+            margin-top: -19%;
+            position: relative;
+        }
+
+        #section1 .Post h1 {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: white;
+            margin-left: 4%;
+            margin-top: 2%;
+            letter-spacing: 1px;
+            position: absolute;
+        }
+
+        #section1 .Post #date {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 15px;
+            background-color: transparent;
+            color: white;
+            margin-left: 4%;
+            margin-top: 7%;
+            letter-spacing: 1px;
+            position: absolute;
+        }
+
+        #section1 .Post #body {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 19px;
+            background-color: transparent;
+            color: white;
+            margin-left: 4%;
+            margin-right: 2%;
+            margin-top: 15%;
+            letter-spacing: 1px;
+            position: absolute;
+            text-align: left;
+        }
+
+        #section1 .Post1{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 540px;
+            height: 50px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 9%;
+            margin-top: -7%;
+            position: relative;
+        }
+
+        #section1 .Post1 #description {
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 19px;
+            background-color: transparent;
+            color: #FF7FE8;
+            margin-left: 4%;
+            margin-right: 2%;
+            margin-top: 3%;
+            letter-spacing: 1px;
+            position: absolute;
+            text-align: left;
+        }
+
+        #section2 .Photos{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 900px;
+            height: 400px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 7%;
+            margin-top: 2%;
+            position: relative;
+        }
+
+        #section2 .Photos h1{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 41%;
+            margin-top: 15%;
+            position: absolute;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        #section2 .Photos p{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 18px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 11%;
+            margin-top: 20%;
+            position: absolute;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        #section2 .Photos button{
+            font-family: "montserrat";
+            color: #231B3B;
+            background-color: #FF7FE8;
+            border-color: #FF7FE8;
+            border-style: solid;
+            border-width: 4px;
+            padding: 5px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 0%;
+            margin-top: 25%;
+            cursor: pointer;
+        }
+
+        #section3 .Files{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 900px;
+            height: 400px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 7%;
+            margin-top: 2%;
+            position: relative;
+        }
+
+        #section3 .Files h1{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 25%;
+            margin-top: 15%;
+            position: absolute;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        #section3 .Files p{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 18px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 6%;
+            margin-top: 20%;
+            position: absolute;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        #section3 .Files button{
+            font-family: "montserrat";
+            color: #231B3B;
+            background-color: #FF7FE8;
+            border-color: #FF7FE8;
+            border-style: solid;
+            border-width: 4px;
+            padding: 5px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 0%;
+            margin-top: 25%;
+            cursor: pointer;
+        }
+
+        #section4 .users{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 900px;
+            height: 325px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 7%;
+            margin-top: 2%;
+            position: relative;
+        }
+
+        #section4 .users h1{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 5%;
+            margin-top: 3%;
+            position: absolute;
+            letter-spacing: 4px;
+        }
+
+        #section4 .users h2{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 5%;
+            margin-top: 12%;
+            position: absolute;
+            letter-spacing: 4px;
+        }
+
+        #section4 .users h3{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 5%;
+            margin-top: 21%;
+            position: absolute;
+            letter-spacing: 4px;
+        }
+
+        #section4 .users h4{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 5%;
+            margin-top: 30%;
+            position: absolute;
+            letter-spacing: 4px;
+        }
+
+        #section4 .users hr{
+            border: 1px solid grey;
+            width: 90%;
+            margin-top: 9%;
+            margin-left: 5%;
+            position: absolute;
+        }
+
+        #section4 .line2 hr{
+            border: 1px solid grey;
+            width: 820px;
+            margin-top: -11.5%;
+            margin-left: 10.3%;
+            position: absolute;
+        }
+
+        #section4 .line3 hr{
+            border: 1px solid grey;
+            width: 820px;
+            margin-top: -6%;
+            margin-left: 10.3%;
+            position: absolute;
+        }
+
+        #section4 .users button {
+            font-family: "montserrat";
+            color: #231B3B;
+            background-color: #FF7FE8;
+            border-color: #FF7FE8;
+            border-style: solid;
+            border-width: 4px;
+            padding: 15px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            margin-left: 83%;
+            margin-top: -79.3%;
+            cursor: pointer;
+        }
+
+        #section4 .line2 button {
+            font-family: "montserrat";
+            color: #231B3B;
+            background-color: #FF7FE8;
+            border-color: #FF7FE8;
+            border-style: solid;
+            border-width: 4px;
+            padding: 15px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            margin-left: 61.5%;
+            margin-top: -16.2%;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #section4 .line3 button {
+            font-family: "montserrat";
+            color: #231B3B;
+            background-color: #FF7FE8;
+            border-color: #FF7FE8;
+            border-style: solid;
+            border-width: 4px;
+            padding: 15px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            margin-left: 61.5%;
+            margin-top: -10.7%;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #section4 .line4 button {
+            font-family: "montserrat";
+            color: #231B3B;
+            background-color: #FF7FE8;
+            border-color: #FF7FE8;
+            border-style: solid;
+            border-width: 4px;
+            padding: 15px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            margin-left: 61.5%;
+            margin-top: -5%;
+            cursor: pointer;
+            position: absolute;
+        }
+        #section5 .Activity{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 500px;
+            height: 225px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 7%;
+            margin-top: 2%;
+            position: relative;
+        }
+
+        #section5 .Activity h1{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 10%;
+            margin-top: 1%;
+            position: absolute;
+            letter-spacing: 4px;
+        }
+
+        #section5 .Activity hr{
+            border: 1px solid grey;
+            width: 90%;
+            margin-top: 8%;
+            margin-left: 5%;
+            position: absolute;
+        }
+
+        #section5 .Activity h2{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: magenta;
+            margin-left: -60%;
+            margin-top: 20%;
+            letter-spacing: 4px;
+        }
+
+        #section5 .Activity #Posts{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: -60%;
+            margin-top: 1%;
+            letter-spacing: 4px;
+        }
+
+        #section5 .vl {
+            border-left: 1px solid grey;
+            height: 50px;
+            margin-left: 25%;
+            margin-top: -10%;
+        }
+
+
+        #section5 .Activity h3{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: magenta;
+            margin-left: 58%;
+            margin-top: -19.5%;
+            letter-spacing: 4px;
+        }
+
+        #section5 .Activity #Members{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: #fff;
+            margin-left: 58%;
+            margin-top: -1%;
+            letter-spacing: 4px;
+        }
+
+        #section5 .About{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 500px;
+            height: 150px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 7%;
+            margin-top: 8%;
+            position: relative;
+        }
+
+        #section5 .About h1{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 3%;
+            letter-spacing: 4px;
+            position: absolute;
+        }
+
+        #section5 .About p{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-right: 2%;
+            margin-top: 12%;
+            letter-spacing: 1px;
+            text-align: left;
+            position: absolute;
+        }
+
+        #section5 .Info{
+            font-family: "montserrat";
+            color: grey;
+            background-color: transparent;
+            border: solid;
+            border-width: 1px;
+            width: 300px;
+            height: 410px;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            font-size: 45px;
+            margin-left: 45%;
+            margin-top: -30.1%;
+            position: relative;
+        }
+
+        #section5 .Info h1{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 23px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 2%;
+            letter-spacing: 4px;
+            position: absolute;
+        }
+
+        #section5 .Info h2{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 17%;
+            letter-spacing: 4px;
+            position: absolute;
+        }
+
+        #section5 .Info #Private{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: magenta;
+            margin-left: 10%;
+            margin-top: 27%;
+            margin-right: 5%;
+            letter-spacing: 1px;
+            text-align: left;
+            position: absolute;
+        }
+
+        #section5 .Info h3{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 47%;
+            letter-spacing: 4px;
+            position: absolute;
+        }
+
+        #section5 .Info #Visible{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: magenta;
+            margin-left: 10%;
+            margin-top: 57%;
+            margin-right: 5%;
+            letter-spacing: 1px;
+            text-align: left;
+            position: absolute;
+        }
+
+        #section5 .Info h4{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 69%;
+            letter-spacing: 4px;
+            position: absolute;
+        }
+
+        #section5 .Info #Created{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: magenta;
+            margin-left: 10%;
+            margin-top: 79%;
+            margin-right: 5%;
+            letter-spacing: 1px;
+            text-align: left;
+            position: absolute;
+        }
+
+        #section5 .Info h5{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            margin-left: 10%;
+            margin-top: 91%;
+            letter-spacing: 4px;
+            position: absolute;
+        }
+
+        #section5 .Info #Creator{
+            font-family: "cabin";
+            font-style: initial;
+            font-size: 20px;
+            background-color: transparent;
+            color: magenta;
+            margin-left: 10%;
+            margin-top: 101%;
+            letter-spacing: 1px;
+            text-align: left;
+            position: absolute;
+        }
+
+
+        
+        
+    </style>
+</head>
+
+<header>
+    <h1>LUCID</h1>
+    <div href="return">
+    <a href="lucid2.html">
+    <h2>LUCID</h2>
+    </a>
+    <h3>It's Time to Wake Up</h3>
+    </div>
+</header>
+
+    <hr>
+
+    <div class="top">
+        <img src="blank_lucid.png" alt="color photo">
+        <h1>Alcoholics Anonymous</h1>
+        <hr>
+    </div>
+
+    <div class="bottom">
+        <hr>
+    </div>
+
+
+    <nav>
+        <a onclick="showSection('section1')">Discussion</a>
+        <a onclick="showSection('section2')">Media</a>
+        <a onclick="showSection('section3')">Files</a>
+        <a onclick="showSection('section4')">Members</a>
+        <a onclick="showSection('section5')">About</a>
+    </nav>
+
+<body>
+
+    <section id="section1" class="active">
+        <div class="Create">
+            <hr>
+        </div>
+        
+        <div class="Create1">
+            <h1>Share Something...</h1>
+            <button type="button">Upload Post</button>
+            <h2>Photo</h2>
+            <h3>Video</h3>
+            <h4>GIF</h4>
+        </div>
+
+        <div class="vl1">
+        </div>
+
+        <div class="vl2">
+        </div>
+
+        <div class="About">
+            <h1>About</h1>
+            <p>Welcome to the group! You can connect with other members, get updates and share videos.</p>
+        </div>
+
+        <div class="Members">
+            <h1>Members</h1>
+            <h2>Owen</h2>
+            <h3>Andrew</h3>
+            <h4>Osiris</h4>
+            <button type="button">Follow</button>
+        </div>
+
+        <div class="button2">
+            <button type="button">Follow</button>
+        </div>
+
+        <div class="button3">
+            <button type="button">Follow</button>
+        </div>
+
+        <div class="Post">
+            <h1>Owen Davis</h1>
+            <p id="date">November 17, 2023</p>
+            <p id="body">Welcome to the Alcohol Anonymous community! This is a space for us to connect and share with each other. Please introduce yourself. Remember to not include your last name.</p>
+        </div>
+
+        <div class="Post1">
+            <p id="description">Write a Comment...</p>
+        </div>
+        
+    </section>
+
+    <section id="section2">
+        <div class="Photos">
+            <h1>No Media Yet</h1>
+            <p>Once people start posting photos or videos, you’ll be able to see them all here.</p>
+            <button type="button">Upload Photo</button>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="Files">
+            <h1>Upload files by posting them to the group</h1>
+            <p>There are no files here yet. Be the first to add files to this group by attaching them to a post.</p>
+            <button type="button">Create Post</button>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="users">
+            <h1>Owen</h1>
+            <h2>Andrew</h2>
+            <h3>Osiris</h3>
+            <h4>Will</h4>
+            <hr>
+            <button type="button">Follow</button>
+        </div>
+        <div class="line2">
+            <hr>
+            <button type="button">Follow</button>
+        </div>
+        <div class="line3">
+            <hr>
+            <button type="button">Follow</button>
+        </div>
+        <div class="line4">
+            <button type="button">Follow</button>
+        </div>
+    </section>
+
+    <section id="section5">
+        <div class="Activity">
+            <h1>Group Activity: Last 30 Days</h1>
+            <hr>
+            <h2>New Posts</h2>
+            <p id="Posts">0</p>
+            <h3>New Members</h3>
+            <p id="Members">0</p>
+        </div>
+        <div class="vl"></div>
+        <div class="About">
+            <h1>About</h1>
+            <p>Welcome to the group! You can connect with other members, get updates and share videos.</p>
+        </div>
+        <div class="Info">
+            <h1>Info</h1>
+            <h2>Private</h2>
+            <p id="Private">Only approved members can view this group.</p>
+            <h3>Visible</h3>
+            <p id="Visible">Shown only to users.</p>
+            <h4>Created On</h4>
+            <p id="Created">November 17, 2023</p>
+            <h5>Created By</h5>
+            <p id="Creator">The Lucid Team</p>
+        </div>
+    </section>
+
+    
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>
