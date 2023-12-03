@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login/Registration</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cabin";
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+body{
+    height: 100vh;
+    background: #231B3B;
+    font-family: "cabin";
+    
+}
+
+button{
+    padding: 10px 20px;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+button a{
+    color: white;
+}
+
+.content{
+    width: 400px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+}
+
+form h2{
+    text-align: center;
+    border-bottom: 2px solid magenta;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.input-bx{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-bx input{
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    border-bottom:  1px solid black;
+    padding: 10px 0px 10px 25px;
+}
+
+.input-bx i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: lime;
+    transition: .5s;
+}
+
+.input-bx input:focus ~ i,
+.input-bx input:valid ~ i{
+    color: #fff222;
+}
+
+.input-bx p{
+    position: absolute;
+    padding: 5px 0px;
+    color: black;
+    text-transform: capitalize;
+    right: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.input-bx p:hover{
+    color: magenta;
+}
+
+.option-text{
+    position: relative;
+}
+
+.option-text hr{
+    height: 2px;
+    background: magenta;
+}
+
+.option-text p{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: -9px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #ffffff;
+    padding: 0px 5px;
+}
+
+.btn-google,
+.btn-facebook{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    transition: .5s;
+}
+
+.btn-google{
+    background: lime;
+}
+
+.btn-google:hover{
+    background: rgba(0, 255, 0, 0.263);
+}
+
+.btn-facebook{
+    background: #7FE8FF;
+}
+
+.btn-facebook:hover{
+    background: #7fe8ff41;
+}
+
+.btn-signin,
+.btn-signup{
+    width: 100%;
+    background: magenta;
+    transition: .5s;
+}
+
+.btn-signin:hover,
+.btn-signup:hover{
+    background: rgba(255, 0, 255, 0.299);
+}
+.message{
+    display: block;
+    text-align: center;
+}
+.message a{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: .5s;
+}
+
+.message a:hover{
+    color: magenta;
+}
+
+.signup-form{
+    display: none;
+}
+</style>
+<body>
+
+    <div class="content">
+        <form action="#" class="signin-form">
+            <h2>Sign In</h2>
+
+            <div class="input-bx">
+                <input type="text" id="signinUsername" required placeholder="Username">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-bx">
+                <input type="password" id="signinPassword" required placeholder="Password">
+                <i class="fa-solid fa-key"></i>
+                <p>forgot password?</p>
+            </div>
+
+            <a href="index.html">
+            <button class="btn-signin" type="submit">Sign In <i class="fa-solid fa-right-to-bracket"></a></i></button>
+            <div class="option-text"><hr><p>or sign in with</p></div>
+
+            <div class="button-group">
+                <a href="index.html">
+                <button class="btn-google">Google <i class="fa-brands fa-google"></a></i></button>
+                <a href="index.html">
+                <button class="btn-facebook">Facebook <i class="fa-brands fa-facebook"></a></i></i></button>
+            </div>
+
+            <p class="message"><a href="#">Not a Member? click here</a></p>
+        </form>
+
+        <form action="#" class="signup-form">
+            <h2>Sign Up</h2>
+
+            <div class="input-bx">
+                <input type="text" id="signupUsername" required placeholder="Username">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-bx">
+                <input type="text" id="signupEmail" required placeholder="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-bx">
+                <input type="password" id="signupPassword" required placeholder="Password">
+                <i class="fa-solid fa-key"></i>
+                <p class="passShowHide">show</p>
+            </div>
+
+            <a href="index.html">
+            <button class="btn-signin" type="submit">Sign Up </a><i class="fa-solid fa-user-plus"></i></button>
+
+            <div class="option-text"><hr><p>or sign up with</p></div>
+
+            <div class="button-group">
+                <a href="index.html">
+                <button class="btn-google">Google <i class="fa-brands fa-google"></a></i></button>
+                <a href="index.html">
+                <button class="btn-facebook">Facebook <i class="fa-brands fa-facebook"></a></i></button>
+            </div>
+
+            <p class="message"><a href="#">Already a Member? click here</a></p>
+        </form>
+    </div>
+    
+    
+    <script>
+        $(document).ready(function () {
+   $('.message').click(function(){
+      $("form").animate({height:"toggle", opacity:"toggle"},"slow");
+   })
+
+   $(".passShowHide").click(function(){
+      var pass = $("#signupPassword");
+      if(pass.attr("type") === "password")
+      {
+         pass.attr("type", "text");
+         $(".passShowHide").text("hide");
+      }
+      else{
+         pass.attr("type", "password");
+         $(".passShowHide").text("show");
+      }
+   })
+});
+    </script>
+</body>
+</html>
